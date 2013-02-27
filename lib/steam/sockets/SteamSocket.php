@@ -141,7 +141,7 @@ abstract class SteamSocket {
      * @see SteamPacket::__toString()
      */
     public function send(SteamPacket $dataPacket) {
-        trigger_error("Sending packet of type \"" . get_class($dataPacket) . "\"...");
+        //trigger_error("Sending packet of type \"" . get_class($dataPacket) . "\"...");
 
         $this->socket->send($dataPacket->__toString());
     }
